@@ -1,2 +1,2 @@
 # cs-coding
-CS and coding
+Computer science and codings
