@@ -1,4 +1,4 @@
-package three_sum
+package main
 
 import "sort"
 
@@ -12,9 +12,9 @@ func ThreeNumberSum(array []int, target int) [][]int {
 			current_sum := v + array[l] + array[r]
 			if current_sum == target {
 				result = append(result, []int{v, array[l], array[r]})
-			}
-
-			if current_sum < target {
+				l++
+				r--
+			} else if current_sum < target {
 				l++
 			} else {
 				r--
